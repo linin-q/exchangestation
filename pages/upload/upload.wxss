@@ -1,0 +1,86 @@
+/* miniprogram/pages/upload/upload.wxss */
+.uploadPicture{
+  /* border: solid #696969; */
+  /* border-radius:30rpx; */
+  position:absolute;
+  top:80rpx;
+  left:70rpx;
+}
+
+.uploadPicture image{
+  height:400rpx;
+  width:300rpx;
+}
+
+.mainDetail{
+  font-size:35rpx;
+  position:absolute;
+  top:60rpx;
+  left:420rpx;
+  /* border:solid; */
+  height:450rpx;
+  width:300rpx;
+  display:flex;
+  flex-direction: column;/*主轴排列方向*/
+  justify-content: space-around;
+  align-items:left; /*副轴排列方式*/
+}
+
+.input{
+  height:65rpx;
+  width:300rpx;
+  /* border:solid #696969; */
+  border-width: 4rpx;
+}
+
+.title{
+  position:absolute;
+  font-size:50rpx;
+  top:530rpx;
+  left:280rpx;
+}
+/* 
+.detail{
+  position:absolute;
+  top:550rpx;
+  left:48rpx;
+  border:solid;
+  border-radius: 20rpx;
+  height:500rpx;
+  width:650rpx;
+  font-size:35rpx;
+} */
+.input2{
+  position:absolute;
+  top:600rpx;
+  left:48rpx;
+  border:solid #696969;
+  border-radius: 20rpx;
+  height:500rpx;
+  width:650rpx;
+  font-size:35rpx;
+}
+/* .input3{
+  position:absolute;
+  font-size:35rpx;
+} */
+
+/* .location{
+  font-size:35rpx;
+  position:absolute;
+  left:420rpx;
+  top:300rpx;
+} */
+
+.login{
+  width:300rpx;
+  position:absolute;
+  top:1120rpx;
+  left:210rpx;
+}
+
+.loc{
+  position:absolute;
+  top:40rpx;
+}
+

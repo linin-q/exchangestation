@@ -1,0 +1,63 @@
+/* miniprogram/pages/user/user.wxss */
+.main {
+  width: 100%;
+  display:flex;
+  flex-direction: column;/*主轴排列方向*/
+  justify-content: space-around;/*主轴排列方式*/
+  align-items: center;/*副轴排列方式*/
+}
+
+.item{
+  height:280rpx;
+  width:100%;
+  background-color:#F8F8F8;
+  border-bottom-style: solid;
+  border-block-end-width: 3.5rpx;
+  border-bottom-color: #C0C0C0;
+  display: flex;
+  flex-direction: row;/*主轴排列方向*/
+  align-items:center; /*副轴排列方式*/
+}
+
+.image-position{
+  position: absolute;
+  left: 35rpx;
+}
+
+.word{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  left: 300rpx;
+  height:230rpx;
+  width:400rpx;
+}
+
+.word_item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  font-weight: 550;
+  left: 450rpx;
+  height:230rpx;
+  
+}
+
+.item image{
+  height: 240rpx;
+  width: 230rpx;
+}
+
+.swiper {
+  height: 400rpx;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-color: #333232;
+}
+
+.swiper image {
+  height: 100%;
+  width: 100%;
+}

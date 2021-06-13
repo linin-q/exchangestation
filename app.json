@@ -1,0 +1,49 @@
+{
+  "cloud":true,
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/upload/upload",
+    "pages/classification/classification",
+    "pages/item/item"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FF9912",
+    "navigationBarTitleText": "兰大易物小站",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#0D0D0D",
+    "selectedColor": "#FF9912",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabBar/p4_g.png",
+        "selectedIconPath": "images/tabBar/p4_o.png"
+      },
+      {
+        "pagePath": "pages/classification/classification",
+        "text": "分类",
+        "iconPath": "images/tabBar/p1_g.png",
+        "selectedIconPath": "images/tabBar/p1_o.png"
+      },
+      {
+        "pagePath": "pages/upload/upload",
+        "text": "上传",
+        "iconPath": "images/tabBar/p2_g.png",
+        "selectedIconPath": "images/tabBar/p2_o.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "images/tabBar/p3_g.png",
+        "selectedIconPath": "images/tabBar/p3_o.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap50.json"
+}

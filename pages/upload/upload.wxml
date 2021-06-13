@@ -1,0 +1,45 @@
+<!--miniprogram/pages/upload/upload.wxml-->
+<view class="main">
+  <view class='uploadPicture'>
+    <view bindtap="uploadImage" type="primary">
+      <image src="{{imageList}}" wx:key="item"></image>
+    </view>
+  </view>
+  <view class='mainDetail'>
+    <view class="input1">
+      <text>商品名称:</text>
+      <input type="text" name="bookName" placeholder="请输入" bindinput="inputName" /> 
+    </view>
+    <view class="input3">
+      <text>QQ:</text>
+      <input type="text" name="QQ" placeholder="请输入" bindinput="inputQQ" />
+    </view>
+    <view class="section">
+      <text>商品类型：</text>
+      <picker class="choose" bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+          <view class="picker">
+            {{array1[index1]}}
+          </view>
+      </picker>
+    </view>
+    <view class="location">
+      <text>商品所在位置：</text>
+      <picker class="choose" bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+          <view class="picker">
+            {{array2[index2]}}
+          </view>
+      </picker>
+    </view>
+  </view>
+  <view class="title">
+      简要介绍
+  </view>
+  <view class="detail">
+    <textarea class="input2" name="detail" placeholder="请输入关于发布物品的基本信息，并留下您的联系方式。" bindinput="inputDetail"/>
+  </view>
+  <view class="loc">
+    <button bindtap="submit" type="primary" class="login" disabled="{{loginState}}">
+      发布
+    </button>
+  </view>
+</view>

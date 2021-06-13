@@ -1,0 +1,33 @@
+<!--miniprogram/pages/index/index.wxml-->
+
+<!--导航条-->
+
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+        <block wx:for="{{movies}}" wx:for-index="index">  
+          <swiper-item>  
+            <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+          </swiper-item>  
+        </block>  
+      </swiper> 
+
+<!--热门物品推荐列表-->
+<view class="main">
+  <!--一个view就是一个物品-->
+  <view wx:for="{{hotList}}" wx:key="books">
+    <view class="item">
+      <view bindtap="clickMe" data-Picture='{{item.picture}}' data-owner='{{item.owner}}' data-Name='{{item.name}}' data-Location='{{item.location}}' data-Service='{{item.service}}' data-detail='{{item.detail}}' data-detail='{{item.detail}}' data-QQ='{{item.QQ}}' class="image-position"> <!--单击事件-->
+        <image src="{{item.picture}}"></image>
+      </view>
+      <view class="word">
+        <text>物品名称：</text>
+        <text>发布地区：</text>
+        <text>服务类型：</text>
+      </view>
+      <view class="word_item">
+        <text>{{item.name}}</text>
+        <text>{{item.location}}</text>
+        <text>{{item.service}}</text>
+      </view>
+    </view>
+  </view>
+</view>

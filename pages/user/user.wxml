@@ -1,0 +1,29 @@
+<!--miniprogram/pages/user/user.wxml-->
+<view class="container">
+  <view class="userinfos">
+    <button class="button" type="primary" bindtap="getuser" size="mini" open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:if="{{showAuth}}">授权登录</button>
+    <view class="avater">
+      <image class="userinfo-avater" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+  </view> 
+  <view class="detail">
+    <view>用户：{{userInfo.nickName}}</view>
+  </view>
+  <view class="title" wx:if="{{showTitle}}">管理发布物品：</view>
+  <view class="item" wx:if="{{showTitle}}">
+      <view bindtap="clickMe" data-Picture='{{item.picture}}' data-owner='{{item.owner}}' data-Name='{{item.name}}' data-Location='{{item.location}}' data-Service='{{item.service}}' data-detail='{{item.detail}}' data-detail='{{item.detail}}' data-QQ='{{item.QQ}}' class="image-position"> <!--单击事件-->
+        <image src="{{item.picture}}"></image>
+      </view>
+      <view class="word">
+        <text>物品名称：</text>
+        <text>发布地区：</text>
+        <text>服务类型：</text>
+      </view>
+      <view class="word_item">
+        <text>{{item.name}}</text>
+        <text>{{item.location}}</text>
+        <text>{{item.service}}</text>
+      </view>
+    </view>
+</view>
+

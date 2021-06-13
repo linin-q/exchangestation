@@ -1,0 +1,57 @@
+/* miniprogram/pages/user/user.wxss */
+.userinfo-avater{
+  position:absolute;
+  left:0rpx;
+  height:250rpx;
+  width:250rpx;
+  border-radius:125rpx;
+  overflow: hidden;
+}
+.userinfos{
+  position:absolute;
+  left:120rpx;
+  top:100rpx;
+}
+.detail{
+  position:absolute;
+  left:460rpx;
+  top:200rpx;
+  font-size: 35rpx;
+}
+.title{
+  position:absolute;
+  left:50rpx;
+  top:400rpx;
+  font-size:35rpx;
+}
+.item{
+  position:absolute;
+  top:500rpx;
+  height:280rpx;
+  width:100%;
+  background-color:#F8F8F8;
+  border-bottom-style: solid;
+  border-block-end-width: 3.5rpx;
+  border-bottom-color: #C0C0C0;
+  display: flex;
+  flex-direction: row;/*主轴排列方向*/
+  align-items:center; /*副轴排列方式*/
+}
+.word{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  left: 300rpx;
+  height:230rpx;
+  width:400rpx;
+}
+.word_item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  font-weight: 550;
+  left: 450rpx;
+  height:230rpx;
+}
